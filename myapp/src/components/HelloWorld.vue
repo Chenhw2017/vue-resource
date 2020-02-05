@@ -37,6 +37,11 @@ export default {
   props: {
     msg: String
   },
+  data() {
+    return {
+      name: 'HelloWorld'
+    }
+  },
   methods: {
     goUser () {
       this.$router.push({path:'user'})
