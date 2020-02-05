@@ -42,6 +42,10 @@ export default {
       name: 'HelloWorld'
     }
   },
+  beforeMount() {
+    // eslint-disable-next-line
+    console.log('beforeMount')
+  },
   methods: {
     goUser () {
       this.$router.push({path:'user'})
